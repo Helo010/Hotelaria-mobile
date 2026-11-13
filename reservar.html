@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BellaVista Hotel | Reservar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="mobile-header">
+    <a href="index.html" class="mobile-brand">
+        <div class="mobile-logo">BV</div>
+        <div><strong>BellaVista</strong><small>HOTEL</small></div>
+    </a>
+    <a href="hotel.html" class="header-icon">ⓘ</a>
+</header>
+
+<main class="mobile-main">
+
+    <div class="page-heading">
+        <span class="section-subtitle">HOSPEDAGEM</span>
+        <h1>Faça sua reserva</h1>
+        <p>Preencha os dados para planejar sua estadia.</p>
+    </div>
+
+    <section class="form-card">
+        <div class="form-card-heading">
+            <div class="service-icon">▤</div>
+            <div>
+                <strong>Dados da hospedagem</strong>
+                <small>Informações da sua viagem</small>
+            </div>
+        </div>
+
+        <form>
+            <div class="mobile-field">
+                <label>Data de chegada</label>
+                <input type="date" required>
+            </div>
+
+            <div class="mobile-field">
+                <label>Data de saída</label>
+                <input type="date" required>
+            </div>
+
+            <div class="mobile-field">
+                <label>Quantidade de hóspedes</label>
+                <select>
+                    <option>1 hóspede</option>
+                    <option>2 hóspedes</option>
+                    <option>3 hóspedes</option>
+                    <option>4 hóspedes</option>
+                </select>
+            </div>
+
+            <div class="mobile-field">
+                <label>Categoria do quarto</label>
+                <select required>
+                    <option value="">Escolha uma categoria</option>
+                    <option>Standard</option>
+                    <option>Luxo</option>
+                    <option>Suíte</option>
+                </select>
+            </div>
+
+            <div class="mobile-field">
+                <label>Nome completo</label>
+                <input type="text" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="mobile-field">
+                <label>E-mail</label>
+                <input type="email" placeholder="seuemail@email.com">
+            </div>
+
+            <div class="mobile-field">
+                <label>Telefone</label>
+                <input type="tel" placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="mobile-field">
+                <label>Observações</label>
+                <textarea rows="3" placeholder="Informações adicionais"></textarea>
+            </div>
+
+            <button type="button" class="mobile-button">Solicitar reserva</button>
+        </form>
+    </section>
+
+    <div class="notice">
+        <span>ⓘ</span>
+        <p>Confira as datas e os dados informados antes de solicitar sua reserva.</p>
+    </div>
+
+</main>
+
+<nav class="bottom-nav">
+    <a href="index.html" class="nav-item"><span>⌂</span><small>Início</small></a>
+    <a href="reservar.html" class="nav-item active"><span>▤</span><small>Reservar</small></a>
+    <a href="reservas.html" class="nav-item"><span>▣</span><small>Reservas</small></a>
+    <a href="hotel.html" class="nav-item"><span>ⓘ</span><small>Hotel</small></a>
+</nav>
+
+</body>
+</html>

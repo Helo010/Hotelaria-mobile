@@ -1,0 +1,688 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --navy: #102747;
+    --blue: #285db5;
+    --gold: #d6a54c;
+    --background: #f5f7fb;
+    --white: #ffffff;
+    --text: #142b4d;
+    --muted: #8390a5;
+    --border: #e7ebf2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    padding-bottom: 90px;
+}
+
+/* CABEÇALHO */
+
+.mobile-header {
+    height: 75px;
+    background: white;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.mobile-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--navy);
+}
+
+.mobile-logo {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gold);
+    border-radius: 9px;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.mobile-brand strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.mobile-brand small {
+    display: block;
+    color: var(--gold);
+    letter-spacing: 3px;
+    font-size: 8px;
+    margin-top: 3px;
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+    background: #f3f6fb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--navy);
+    font-size: 18px;
+}
+
+/* CONTEÚDO */
+
+.mobile-main {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 20px 18px;
+}
+
+.page-heading {
+    margin: 15px 0 25px;
+}
+
+.section-subtitle {
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.page-heading h1 {
+    font-size: 25px;
+    margin: 10px 0;
+    color: var(--navy);
+}
+
+.page-heading p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 300px;
+    background: linear-gradient(135deg, #102747, #28517f);
+    border-radius: 18px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.hero-content > span {
+    color: var(--gold);
+    font-size: 9px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.hero p {
+    color: #d0d9e8;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 9px;
+    background: var(--gold);
+    color: var(--navy);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* SEÇÕES */
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.section-heading h2 {
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.welcome-text {
+    color: #6c7a90;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.text-link {
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* SERVIÇOS */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 17px;
+}
+
+.service-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 11px;
+    background: #eaf0fc;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    flex-shrink: 0;
+}
+
+.service-card .service-icon {
+    margin-bottom: 14px;
+}
+
+.service-card strong {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.service-card small {
+    display: block;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+/* BANNER */
+
+.booking-banner {
+    background: var(--navy);
+    border-radius: 14px;
+    padding: 22px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.booking-banner span {
+    color: var(--gold);
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.booking-banner h2 {
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.booking-banner p {
+    color: #bdc9da;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.booking-banner a {
+    color: var(--gold);
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* ACESSO À RESERVA */
+
+.reservation-access {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.reservation-access strong {
+    font-size: 12px;
+    display: block;
+}
+
+.reservation-access small {
+    font-size: 10px;
+    color: var(--muted);
+    display: block;
+    margin-top: 6px;
+}
+
+.reservation-access > span {
+    margin-left: auto;
+    font-size: 22px;
+    color: #9aa6b6;
+}
+
+/* FORMULÁRIOS */
+
+.form-card {
+    background: white;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.form-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.form-card-heading strong {
+    display: block;
+    font-size: 13px;
+}
+
+.form-card-heading small {
+    display: block;
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 5px;
+}
+
+.mobile-field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 19px;
+}
+
+.mobile-field label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #42536b;
+}
+
+.mobile-field input,
+.mobile-field select,
+.mobile-field textarea {
+    width: 100%;
+    min-height: 48px;
+    border: 1px solid #dce3ed;
+    border-radius: 9px;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 13px;
+    color: var(--text);
+    background: white;
+    outline: none;
+}
+
+.mobile-field textarea {
+    resize: vertical;
+}
+
+.mobile-field input:focus,
+.mobile-field select:focus,
+.mobile-field textarea:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(40, 93, 181, 0.10);
+}
+
+.mobile-field input::placeholder,
+.mobile-field textarea::placeholder {
+    color: #a4afbd;
+}
+
+/* BOTÕES */
+
+.mobile-button {
+    width: 100%;
+    min-height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: var(--blue);
+    color: white;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.link-button {
+    margin-top: 15px;
+}
+
+.danger-button {
+    background: #c43e4b;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 12px;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+/* AVISOS */
+
+.notice {
+    background: #edf3ff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: var(--blue);
+}
+
+.notice p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #526c98;
+}
+
+.notice.warning {
+    background: #fff3dc;
+    color: #a77717;
+}
+
+.notice.warning p {
+    color: #8e6b2d;
+}
+
+/* RESERVAS */
+
+.reservation-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 18px;
+}
+
+.reservation-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.reservation-code {
+    font-size: 9px;
+    font-weight: 700;
+    color: #8290a4;
+    letter-spacing: 1px;
+}
+
+.reservation-status {
+    background: #e5f6ed;
+    color: #198754;
+    padding: 7px 9px;
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.pending-status {
+    background: #fff3dc;
+    color: #a77717;
+}
+
+.reservation-card h3 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.reservation-detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.reservation-detail > span {
+    width: 35px;
+    height: 35px;
+    background: #f1f5fb;
+    color: var(--blue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservation-detail small {
+    display: block;
+    color: var(--muted);
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.reservation-detail strong {
+    font-size: 12px;
+}
+
+.reservation-actions {
+    margin-top: 18px;
+}
+
+.cancel-link {
+    display: block;
+    text-align: center;
+    color: #c43e4b;
+    text-decoration: none;
+    border: 1px solid #f3cbd0;
+    border-radius: 9px;
+    padding: 13px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* HOTEL */
+
+.hotel-banner {
+    background: linear-gradient(135deg, #102747, #28517f);
+    border-radius: 15px;
+    min-height: 180px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hotel-banner span {
+    color: var(--gold);
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.hotel-banner h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.hotel-service {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.hotel-service > span {
+    width: 43px;
+    height: 43px;
+    border-radius: 10px;
+    background: #eaf0fc;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.hotel-service strong {
+    display: block;
+    font-size: 12px;
+}
+
+.hotel-service small {
+    display: block;
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 6px;
+}
+
+.contact-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+.contact-card h2 {
+    font-size: 21px;
+    margin: 12px 0;
+}
+
+.contact-card p {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    font-size: 12px;
+    color: #52627a;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+/* NAVEGAÇÃO INFERIOR */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 72px;
+    background: white;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 7px 5px;
+    z-index: 100;
+}
+
+.nav-item {
+    flex: 1;
+    min-height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #8b98aa;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.nav-item span {
+    font-size: 20px;
+}
+
+.nav-item small {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: var(--blue);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 360px) {
+    .mobile-main {
+        padding: 16px 12px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .form-card {
+        padding: 16px;
+    }
+
+    .service-card {
+        padding: 13px;
+    }
+}
