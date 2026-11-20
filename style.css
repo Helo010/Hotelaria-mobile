@@ -1469,3 +1469,42 @@ body {
         padding-bottom: max(8px, env(safe-area-inset-bottom));
     }
 }
+
+
+/* =====================================
+   BARRA DE ROLAGEM - BELLAVISTA
+===================================== */
+
+/* Firefox */
+.phone-screen .mobile-main {
+    scrollbar-width: thin;
+    scrollbar-color: #D9A64F transparent;
+}
+
+/* Chrome, Edge e Safari */
+.phone-screen .mobile-main::-webkit-scrollbar {
+    width: 5px;
+}
+
+.phone-screen .mobile-main::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 12px 0;
+}
+
+.phone-screen .mobile-main::-webkit-scrollbar-thumb {
+    background: #D9A64F;
+    border-radius: 20px;
+}
+
+.phone-screen .mobile-main::-webkit-scrollbar-thumb:hover {
+    background: #B88735;
+}
+
+/* Evita uma barra visualmente pesada */
+.phone-screen {
+    scrollbar-width: none;
+}
+
+.phone-screen::-webkit-scrollbar {
+    display: none;
+}
