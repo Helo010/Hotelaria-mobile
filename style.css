@@ -1249,3 +1249,118 @@ textarea:focus-visible {
         font-size: 11px;
     }
 }
+
+
+
+/* =====================================
+   APRESENTAÇÃO Em Formato de celular*/
+
+body {
+    background: #e8edf3;
+    padding-bottom: 0;
+}
+
+/* Área que centraliza o aparelho */
+.device-stage {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* Moldura externa do celular */
+.phone-shell {
+    position: relative;
+    width: 390px;
+    height: min(850px, calc(100vh - 60px));
+    min-height: 600px;
+    background: #101827;
+    border: 5px solid #263449;
+    border-radius: 42px;
+    padding: 24px 9px 10px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Câmera e alto-falante */
+.phone-shell::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85px;
+    height: 13px;
+    background: #050a12;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+/* Tela interna */
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: #F4F1E9;
+    border-radius: 29px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    scrollbar-width: thin;
+    scrollbar-color: #D9A64F transparent;
+}
+
+/* Barra de navegação dentro do celular */
+.phone-screen .bottom-nav {
+    position: sticky;
+    bottom: 0;
+    left: auto;
+    width: 100%;
+    border-radius: 0 0 27px 27px;
+}
+
+/* Ajustes para a tela interna */
+.phone-screen .mobile-header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+/* =====================================
+   CELULAR REAL */
+
+@media (max-width: 600px) {
+    body {
+        background: #F4F1E9;
+    }
+
+    .device-stage {
+        display: block;
+        min-height: 100vh;
+        padding: 0;
+    }
+
+    .phone-shell {
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        min-height: 0;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+        background: #F4F1E9;
+    }
+
+    .phone-shell::before {
+        display: none;
+    }
+
+    .phone-screen {
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .phone-screen .bottom-nav {
+        border-radius: 0;
+    }
+}
