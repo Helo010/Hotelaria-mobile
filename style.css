@@ -1508,3 +1508,48 @@ body {
 .phone-screen::-webkit-scrollbar {
     display: none;
 }
+
+
+
+/* CENTRALIZAR O CELULAR NA TELA DO NOTEBOOK */
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+.device-stage {
+    width: 100%;
+    min-height: 100vh;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.phone-shell {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    flex: 0 0 430px;
+}
+
+/* MANTER A VERSÃO DE TELA CHEIA EM CELULARES REAIS */
+@media (max-width: 600px) {
+    .device-stage {
+        display: block !important;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+    }
+
+    .phone-shell {
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        min-height: 0;
+        margin: 0 !important;
+        flex: none;
+    }
+}
