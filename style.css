@@ -686,3 +686,566 @@ body {
         padding: 13px;
     }
 }
+
+
+/* =========================================
+   BELLA VISTA HOTEL - NOVA IDENTIDADE MOBILE
+   ========================================= */
+
+:root {
+    --navy: #061a34;
+    --blue: #173b65;
+    --gold: #d9a64f;
+    --background: #f4f1e9;
+    --white: #ffffff;
+    --text: #172b45;
+    --muted: #65748a;
+    --border: #e5dfd3;
+}
+
+/* CONFIGURAÇÃO GERAL */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    padding-bottom: 100px;
+    font-size: 16px;
+}
+
+/* CABEÇALHO */
+
+.mobile-header {
+    min-height: 82px;
+    height: auto;
+    background: var(--navy);
+    padding: 12px 20px;
+    border-bottom: 2px solid var(--gold);
+}
+
+.mobile-brand {
+    color: #ffffff;
+}
+
+.mobile-logo {
+    width: 46px;
+    height: 46px;
+    border: 1px solid var(--gold);
+    border-radius: 12px;
+    color: var(--gold);
+    font-size: 24px;
+}
+
+.mobile-brand strong {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.mobile-brand small {
+    color: #e8c27f;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+
+.header-icon {
+    width: 46px;
+    height: 46px;
+    background: rgba(255,255,255,.12);
+    color: #ffffff;
+    font-size: 21px;
+}
+
+/* CONTEÚDO */
+
+.mobile-main {
+    max-width: 560px;
+    padding: 24px 20px;
+}
+
+.page-heading {
+    margin: 18px 0 28px;
+}
+
+.section-subtitle {
+    color: #a8792c;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.page-heading h1 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 10px 0 12px;
+    color: var(--navy);
+}
+
+.page-heading p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+/* DESTAQUE INICIAL */
+
+.hero {
+    min-height: 340px;
+    background: linear-gradient(135deg, #061a34, #173b65, #28517f);
+    border: 1px solid rgba(217,166,79,.45);
+    border-radius: 22px;
+    padding: 28px 24px;
+    box-shadow: 0 12px 28px rgba(6,26,52,.14);
+}
+
+.hero-content > span {
+    color: #f0c979;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+.hero p {
+    color: #e0e7f0;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 26px;
+}
+
+.hero-button {
+    min-height: 54px;
+    padding: 0 22px;
+    border-radius: 11px;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* SEÇÕES */
+
+.section {
+    margin-bottom: 34px;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: var(--navy);
+}
+
+.welcome-text {
+    color: #586981;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.text-link {
+    color: var(--blue);
+    font-size: 14px;
+}
+
+/* SERVIÇOS */
+
+.service-grid {
+    gap: 14px;
+}
+
+.service-card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 19px 16px;
+    box-shadow: 0 5px 16px rgba(20,39,65,.05);
+}
+
+.service-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    background: #f7edda;
+    color: #9b6d25;
+    font-size: 22px;
+}
+
+.service-card strong {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.service-card small {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* BANNER DE RESERVA */
+
+.booking-banner {
+    background: linear-gradient(135deg, #061a34, #173b65);
+    border: 1px solid rgba(217,166,79,.4);
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(6,26,52,.12);
+}
+
+.booking-banner span {
+    color: #f0c979;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.booking-banner h2 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    margin: 13px 0;
+}
+
+.booking-banner p {
+    color: #d5dfeb;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.booking-banner a {
+    color: #f0c979;
+    font-size: 15px;
+}
+
+/* ACESSO À RESERVA */
+
+.reservation-access {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 19px 16px;
+    box-shadow: 0 4px 14px rgba(20,39,65,.04);
+}
+
+.reservation-access strong {
+    font-size: 15px;
+}
+
+.reservation-access small {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* FORMULÁRIOS */
+
+.form-card {
+    background: #ffffff;
+    padding: 23px 19px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(20,39,65,.05);
+}
+
+.form-card-heading strong {
+    font-size: 17px;
+}
+
+.form-card-heading small {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.mobile-field {
+    gap: 9px;
+    margin-bottom: 21px;
+}
+
+.mobile-field label {
+    font-size: 15px;
+    color: #263d59;
+}
+
+.mobile-field input,
+.mobile-field select,
+.mobile-field textarea {
+    min-height: 54px;
+    border: 1px solid #d9d3c8;
+    border-radius: 11px;
+    padding: 14px;
+    font-size: 16px;
+    background: #fffefa;
+}
+
+.mobile-field textarea {
+    min-height: 110px;
+}
+
+.mobile-field input:focus,
+.mobile-field select:focus,
+.mobile-field textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(217,166,79,.18);
+}
+
+/* BOTÕES */
+
+.mobile-button {
+    min-height: 56px;
+    border-radius: 11px;
+    background: var(--navy);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 5px 13px rgba(6,26,52,.14);
+}
+
+.mobile-button:hover,
+.mobile-button:focus-visible {
+    background: #173b65;
+}
+
+.danger-button {
+    background: #a93642;
+}
+
+.back-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* AVISOS */
+
+.notice {
+    background: #edf2f8;
+    border: 1px solid #dbe4ef;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.notice p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.notice.warning {
+    background: #fff5e3;
+    border: 1px solid #f0dfbd;
+}
+
+.notice.warning p {
+    color: #795b2b;
+}
+
+/* CARTÕES DE RESERVAS */
+
+.reservation-card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    padding: 21px 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 16px rgba(20,39,65,.05);
+}
+
+.reservation-code {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.reservation-status {
+    font-size: 12px;
+    padding: 8px 11px;
+}
+
+.reservation-card h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    margin-bottom: 18px;
+    color: var(--navy);
+}
+
+.reservation-detail {
+    gap: 13px;
+    padding: 14px 0;
+}
+
+.reservation-detail > span {
+    width: 42px;
+    height: 42px;
+    background: #f7edda;
+    color: #9b6d25;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.reservation-detail small {
+    font-size: 12px;
+}
+
+.reservation-detail strong {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.cancel-link {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* INFORMAÇÕES DO HOTEL */
+
+.hotel-banner {
+    background: linear-gradient(135deg, #061a34, #173b65);
+    border: 1px solid rgba(217,166,79,.45);
+    border-radius: 18px;
+    min-height: 210px;
+    padding: 26px;
+    box-shadow: 0 8px 20px rgba(6,26,52,.12);
+}
+
+.hotel-banner span {
+    color: #f0c979;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.hotel-banner h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.hotel-service {
+    gap: 15px;
+    padding: 18px 0;
+}
+
+.hotel-service > span {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #f7edda;
+    color: #9b6d25;
+    font-size: 21px;
+    flex-shrink: 0;
+}
+
+.hotel-service strong {
+    font-size: 15px;
+}
+
+.hotel-service small {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.contact-card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    padding: 24px 20px;
+    box-shadow: 0 5px 16px rgba(20,39,65,.05);
+}
+
+.contact-card h2 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    color: var(--navy);
+}
+
+.contact-card p {
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.contact-item {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* MENU INFERIOR */
+
+.bottom-nav {
+    min-height: 82px;
+    background: var(--navy);
+    border-top: 2px solid var(--gold);
+    padding: 8px 5px;
+    box-shadow: 0 -5px 18px rgba(6,26,52,.12);
+}
+
+.nav-item {
+    min-height: 60px;
+    color: #c3cedb;
+    border-radius: 12px;
+}
+
+.nav-item span {
+    font-size: 22px;
+}
+
+.nav-item small {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nav-item.active {
+    color: #f0c979;
+    background: rgba(217,166,79,.12);
+}
+
+/* ACESSIBILIDADE */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid rgba(217,166,79,.55);
+    outline-offset: 2px;
+}
+
+/* AJUSTE PARA CELULARES PEQUENOS */
+
+@media (max-width: 360px) {
+    .mobile-main {
+        padding: 18px 13px;
+    }
+
+    .hero {
+        padding: 22px 19px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .form-card {
+        padding: 19px 15px;
+    }
+
+    .service-card {
+        padding: 15px 12px;
+    }
+
+    .service-card strong {
+        font-size: 14px;
+    }
+
+    .service-card small {
+        font-size: 12px;
+    }
+
+    .nav-item small {
+        font-size: 11px;
+    }
+}
