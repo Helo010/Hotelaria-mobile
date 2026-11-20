@@ -687,10 +687,9 @@ body {
     }
 }
 
-
 /* =========================================
    BELLA VISTA HOTEL - NOVA IDENTIDADE MOBILE
-   ========================================= */
+========================================= */
 
 :root {
     --navy: #061a34;
@@ -1250,10 +1249,9 @@ textarea:focus-visible {
     }
 }
 
-
-
 /* =====================================
-   APRESENTAÇÃO Em Formato de celular*/
+   APRESENTAÇÃO EM FORMATO DE CELULAR
+===================================== */
 
 body {
     background: #e8edf3;
@@ -1326,8 +1324,7 @@ body {
     z-index: 5;
 }
 
-/* =====================================
-   CELULAR REAL */
+/* CELULAR REAL */
 
 @media (max-width: 600px) {
     body {
@@ -1363,5 +1360,112 @@ body {
 
     .phone-screen .bottom-nav {
         border-radius: 0;
+    }
+}
+
+/* =====================================
+   ORGANIZAÇÃO FINAL DA TELA DO CELULAR
+===================================== */
+
+/* Moldura: remove o espaço extra abaixo da tela */
+.phone-shell {
+    padding-bottom: 0;
+}
+
+/* Tela interna do aparelho */
+.phone-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Cabeçalho permanece no topo */
+.phone-screen .mobile-header {
+    position: relative;
+    top: auto;
+    flex-shrink: 0;
+    z-index: 5;
+}
+
+/* Conteúdo com rolagem própria */
+.phone-screen .mobile-main {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Navegação inferior: ocupa toda a largura interna */
+.phone-screen .bottom-nav {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    min-height: 82px;
+    margin-top: auto;
+    padding: 8px 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    box-sizing: border-box;
+    flex: 0 0 auto;
+
+    background: #061A34;
+    border-top: 2px solid #D9A64F;
+    border-radius: 0 0 27px 27px;
+    box-shadow: 0 -5px 18px rgba(6, 26, 52, 0.16);
+    z-index: 10;
+}
+
+/* Cada opção da navegação */
+.phone-screen .nav-item {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    padding: 5px 2px;
+    color: #C3CEDB;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+/* Ícones */
+.phone-screen .nav-item span {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+/* Textos da navegação */
+.phone-screen .nav-item small {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Página selecionada */
+.phone-screen .nav-item.active {
+    color: #F0C979;
+    background: rgba(217, 166, 79, 0.14);
+}
+
+/* Em celulares reais, a navegação acompanha a largura da tela */
+@media (max-width: 600px) {
+    .phone-screen {
+        border-radius: 0;
+    }
+
+    .phone-screen .bottom-nav {
+        border-radius: 0;
+        padding-bottom: max(8px, env(safe-area-inset-bottom));
     }
 }
